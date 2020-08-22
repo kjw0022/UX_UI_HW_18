@@ -24,6 +24,26 @@
     width:"500px";
     margin:"0 auto";
   }
+
+  /*My Work section constructed using CSS Grid*/
+  .workGrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    align-content: start;
+    justify-content: start;
+  }
+  /*My UX Skills section coded using CSS flex*/
+ .flexContainer{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin:"0 auto";
+    padding:"25px";
+  }
   footer{
    background-color: #373738;
   }
@@ -39,4 +59,12 @@
   .footer{
     padding-left: 50px;
     margin:"25px";
+  }
+
+  @media only screen and (max-width:600){
+    .flexContainer{
+      display:flex;
+      flex-direction:column;
+      width: 100%;
+    }
   }
